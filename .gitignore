@@ -1,4 +1,4 @@
-# OSX
+ # OSX
 #
 .DS_Store
 
@@ -64,3 +64,4 @@ yarn-error.log
 
 # testing
 /coverage
+android
