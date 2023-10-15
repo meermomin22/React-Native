@@ -35,19 +35,6 @@ const Form = () => {
                     onPress={() => setDisplay(true)} />
             </View>
 
-            <View>
-
-                display ?
-
-                <Text>Name of Candidate is {name}</Text>
-                <Text>Candidate's Parents name {pname}</Text>
-                <Text>Address of Candidate {address}</Text>
-
-
-
-
-
-            </View>
         </View>
 
     )
