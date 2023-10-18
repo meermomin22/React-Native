@@ -27,6 +27,10 @@ import Custom from "./components/CustomModal";
 import Stacks from "./components/Navigation";
 import NewApp from "./components/NewApp";
 import TabNavigation from "./components/TabNavigation";
+import Api from "./components/Api";
+import Api22 from "./components/Try";
+
+
 
 
 
@@ -35,7 +39,7 @@ const App = () => {
 
   return (
     <View  style={{flex:1}}>
-     <TabNavigation/>
+     <Api22/>
     
     </View>
   )

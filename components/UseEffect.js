@@ -22,6 +22,7 @@ const Student = ()=>{
     return(
         <View>
             <Text style={{fontSize:40, fontWeight:'bold', color:'red'}}>Students Info</Text>
+            <Button  title="hiii"/>
         </View>
     )
 }
