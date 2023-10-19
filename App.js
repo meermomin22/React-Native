@@ -28,7 +28,8 @@ import Stacks from "./components/Navigation";
 import NewApp from "./components/NewApp";
 import TabNavigation from "./components/TabNavigation";
 import Api from "./components/Api";
-import Api22 from "./components/Try";
+import ApiList from "./components/ApiList";
+import ApiFlatList from "./components/ApiFlatList";
 
 
 
@@ -39,7 +40,7 @@ const App = () => {
 
   return (
     <View  style={{flex:1}}>
-     <Api22/>
+     <ApiFlatList />
     
     </View>
   )

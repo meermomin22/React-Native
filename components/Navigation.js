@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, Button, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
+import { View, Text, Button, StyleSheet, TouchableOpacity, TextInput, ScrollView } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Radio from "./Radio";
@@ -53,10 +53,10 @@ const Header = ()=>{
 }
 const Home = (props) => {
     return (
-        <View style={{ flex: 1, alignContent: 'flex-end' }}>
+        <ScrollView >
             <Text style={{ fontSize: 20, color: 'white', fontWeight: '900', backgroundColor: 'black' }}>Welcome to 5 Short Hadees App. This app is designed by Meer Momin</Text>
             <View style={styles.view1}>
-                <Text style={styles.text}> <Text style={{ fontSize: 30, color: 'black' }}>Hadees No. 1::-</Text>
+                <Text style={styles.text}> <Text style={{ fontSize: 50, color: 'black' }}>Hadees No. 1::-</Text>
 
                     Narrated 'Umar bin Al-Khattab:
 
@@ -67,7 +67,7 @@ const Home = (props) => {
 
             <View style={styles.view2}>
                 <View style={styles.sview1}>
-                    <Text style={styles.text1}><Text style={{ fontSize: 30, color: 'blue' }}>Hadees No 2:::-</Text>
+                    <Text style={styles.text1}><Text style={{ fontSize:20, color: 'blue' }}>Hadees No 2:::-</Text>
                         There are two words which are light on the tongue, heavy on the scale, and loved by the Most Merciful: SubhanAllahi wa bihamdi, SubhanAllahi al-azeem (Glorified is Allah and praised is He, Glorified is Allah the Most Great).
 
                         (Bukhari and Muslim)
@@ -96,17 +96,17 @@ const Home = (props) => {
                     (Bukhari and Muslim)</Text>
             </View>
             <Button title="Know More about hadees" onPress={() => props.navigation.navigate("Login")} />
-        </View>
+        </ScrollView>
     )
 }
 const Info = (props) => {
     const [radio, setRadio] = useState(true)
     return (
-        <View style={{ flex: 1, backgroundColor: 'black' }}>
+        <ScrollView style={{ flex: 1, backgroundColor: 'black' }}>
             <View style={{ flex: 1, backgroundColor: 'white' }}>
 
                 <View style={styles.main}>
-                    <Text style={{ fontSize: 30, color: 'black' }}>Select Your Gender</Text>
+                    <Text style={{ fontSize: 90, color: 'black' }}>Select Your Gender</Text>
                     <TouchableOpacity onPress={() => setRadio(!radio)}>
                         <View style={styles.radiowrapper}>
                             <View style={styles.radio}>
@@ -135,13 +135,13 @@ const Info = (props) => {
             <View style={{ flex: 2, backgroundColor: 'red' }}>
             </View>
 
-        </View>
+        </ScrollView>
     )
 }
 const Login = (props) => {
     return (
-        <View>
-            <Text style={{ fontSize: 17, color: 'black', backgroundColor: 'orange' }}>Ḥadīth (Arabic: حديث )refers to what most Muslims and the mainstream schools of Islamic thought believe to be a record of the words, actions, and the silent approval of the Islamic prophet Muhammad as transmitted through chains of narrators. In other words, the ḥadīth are attributed reports about what Muhammad said and did.
+        <ScrollView>
+            <Text style={{ fontSize: 40, color: 'black', backgroundColor: 'orange' }}>Ḥadīth (Arabic: حديث )refers to what most Muslims and the mainstream schools of Islamic thought believe to be a record of the words, actions, and the silent approval of the Islamic prophet Muhammad as transmitted through chains of narrators. In other words, the ḥadīth are attributed reports about what Muhammad said and did.
 
                 Hadith have been called by some as "the backbone" of Islamic civilization, and for many the authority of hadith is a source for religious and moral guidance known as Sunnah, which ranks second only to that of the Quran(which Muslims hold to be the word of God revealed to Muhammad). While the number of verses pertaining to law in the Quran is relatively few, hadith are considered by many to give direction on everything from details of religious obligations (such as Ghusl or Wudu, ablutions for salat prayer), to the correct forms of salutations and the importance of benevolence to slaves. Thus for many, the "great bulk" of the rules of Sharia (Islamic law) are derived from hadith, rather than the Quran.
 
@@ -154,7 +154,7 @@ const Login = (props) => {
                 Among scholars of Sunni Islam the term hadith may include not only the words, advice, practices, etc. of Muhammad, but also those of his companions.In Shia Islam, hadith are the embodiment of the sunnah, the words and actions of Muhammad and his family, the Ahl al-Bayt (The Twelve Imams and Muhammad's daughter, Fatimah).</Text>
             <Button title="about info" onPress={() => props.navigation.navigate("Info")} />
 
-        </View>
+        </ScrollView>
     )
 }
 const styles = StyleSheet.create({
