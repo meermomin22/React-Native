@@ -30,6 +30,11 @@ import TabNavigation from "./components/TabNavigation";
 import Api from "./components/Api";
 import ApiList from "./components/ApiList";
 import ApiFlatList from "./components/ApiFlatList";
+import GetApi from "./components/GetApi";
+import Dbjs from "./components/Db";
+import Register from "./components/Rejister";
+import Delete from "./components/Delete";
+import Post from "./components/Post";
 
 
 
@@ -39,9 +44,16 @@ import ApiFlatList from "./components/ApiFlatList";
 const App = () => {
 
   return (
-    <View  style={{flex:1}}>
-     <ApiFlatList />
-    
+    <View style={{ flex: 1 }}>
+      <ScrollView >
+        <Register />
+      </ScrollView>
+      <View style={{ flex: 2, backgroundColor: 'green' }}>
+        <Post />
+      </View>
+      <View style={{ flex: 2, backgroundColor: 'khaki' }}>
+        <Delete />
+      </View>
     </View>
   )
 }
