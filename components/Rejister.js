@@ -11,7 +11,7 @@ const Register = () => {
     const [ageError, setAgeError] = useState(false)
 
     const RegisterUser = async () => {
-        const url = "http://192.168.208.175:3000/users";
+        const url = "http://192.168.114.175:3000/users";
         if (!name) {
             setNameError(true)
         }

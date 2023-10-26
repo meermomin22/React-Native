@@ -35,7 +35,7 @@ import Dbjs from "./components/Db";
 import Register from "./components/Rejister";
 import Delete from "./components/Delete";
 import Post from "./components/Post";
-
+import Newlist from "./components/Newlist";
 
 
 
@@ -44,16 +44,11 @@ import Post from "./components/Post";
 const App = () => {
 
   return (
-    <View style={{ flex: 1 }}>
-      <ScrollView >
-        <Register />
-      </ScrollView>
-      <View style={{ flex: 2, backgroundColor: 'green' }}>
-        <Post />
-      </View>
-      <View style={{ flex: 2, backgroundColor: 'khaki' }}>
-        <Delete />
-      </View>
+    <View style={{flex:1}}>
+
+      <Newlist />
+      <Post />
+
     </View>
   )
 }

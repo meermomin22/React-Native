@@ -3,7 +3,7 @@ import { View, Text, Button, ScrollView, FlatList, StyleSheet } from "react-nati
 const Dbjs = () =>{
     const [data, setData] = useState([])
     const GetApiData= async()=>{
-        const url = "http://192.168.237.175:3000/users"
+        const url = "http://192.168.114.175:3000/users"
         let result = await fetch(url);
         result = await result.json();
         setData(result)
