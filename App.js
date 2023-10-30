@@ -36,6 +36,7 @@ import Register from "./components/Rejister";
 import Delete from "./components/Delete";
 import Post from "./components/Post";
 import Newlist from "./components/Newlist";
+import Thirdapi from "./components/Thirdapi";
 
 
 
@@ -46,8 +47,7 @@ const App = () => {
   return (
     <View style={{flex:1}}>
 
-      <Newlist />
-      <Post />
+     <Thirdapi />
 
     </View>
   )

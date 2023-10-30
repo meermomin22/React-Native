@@ -2,11 +2,11 @@ import React, {useState, useEffect} from "react";
 import {View, Button, Text, StyleSheet, SafeAreaViewComponent} from "react-native";
 const Post = ()=>{
     const PostData= async()=>{
-        const url ="http://192.168.29.175:3000/users";
+        const url ="http://192.168.11.175:3000/users";
         const data={
-            name:"Naseem Shah",
-            address:"Pakistan",
-            email:"Naseem@gmail.com"
+            name:"Khan Momin Khan",
+            address:"Kashmir",
+            email:"Khanmomin@gmail.com"
         }
         let result = await fetch(url, {
             "method":"POST",
