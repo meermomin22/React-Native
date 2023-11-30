@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SafeAreaView, StyleSheet, Image, View, Text, Input, Button, ScrollView, StatusBar, useColorScheme, Pressable } from "react-native";
+import { View, SafeAreaView, StyleSheet, Image,Text, Input, Button, ScrollView, StatusBar, useColorScheme, Pressable } from "react-native";
 import Products from "./components/Products";
 import Names from "./components/Names";
 import Form from "./components/Form";
@@ -37,17 +37,51 @@ import Delete from "./components/Delete";
 import Post from "./components/Post";
 import Newlist from "./components/Newlist";
 import Thirdapi from "./components/Thirdapi";
+import Search from "./components/SearchWithApi";
+import Ref from "./components/Ref";
+import Async from "./components/Async";
+import Header from "./components/Header";
+import Product from "./components/ProductRedux";
 
 
 
 
 
 const App = () => {
+  const Mobiles = [
+    {
+      name: 'Samsung',
+      color: 'black',
+      price: 10000,
+      ram: '3gb',
+      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.samsung.com%2Fin%2Fexplore%2Fbrand%2Flatest-5g-mobile-phone-online%2F&psig=AOvVaw3HeFMuxvBgAINGgB_hAc5e&ust=1699248846511000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCLCJxLKRrIIDFQAAAAAdAAAAABAE'
+    },
+    {
+      name: 'Redmi',
+      color: 'black',
+      price: 20000,
+      ram: '6gb',
+      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.samsung.com%2Fin%2Fexplore%2Fbrand%2Flatest-5g-mobile-phone-online%2F&psig=AOvVaw3HeFMuxvBgAINGgB_hAc5e&ust=1699248846511000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCLCJxLKRrIIDFQAAAAAdAAAAABAE'
+    },
+    {
+      name: 'Redmi 4A',
+      color: 'black',
+      price: 30000,
+      ram: '9gb',
+      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.samsung.com%2Fin%2Fexplore%2Fbrand%2Flatest-5g-mobile-phone-online%2F&psig=AOvVaw3HeFMuxvBgAINGgB_hAc5e&ust=1699248846511000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCLCJxLKRrIIDFQAAAAAdAAAAABAE'
+    }
+
+  ]
 
   return (
-    <View style={{flex:1}}>
+    <View style={{ flex: 1 }}>
 
-     <Thirdapi />
+      <Header />
+      <ScrollView>
+      {
+        Mobiles.map((item)=><Product item={item} />)
+      }
+      </ScrollView>
 
     </View>
   )

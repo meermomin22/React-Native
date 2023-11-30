@@ -35,10 +35,10 @@ const Thirdapi = () => {
     return (
         <View style={styles.container}>
             <View style={styles.dataWrappera}>
-                <View style={{ flex: 1 }}><Text style={{ color: 'white', fontSize: 30 }} >Name</Text></View>
-                <View style={{ flex: 1 }}><Text style={{ color: 'white', fontSize: 30 }} >Address</Text></View>
-                <View style={{ flex: 1 }}><Text style={{ color: 'white', fontSize: 30 }}>Delete</Text></View>
-                <View style={{ flex: 1 }}><Text style={{ color: 'white', fontSize: 30 }}>Update</Text></View>
+                <View style={{ flex: 1 }}><Text style={{ color: 'black', fontSize: 30 }} >Name</Text></View>
+                <View style={{ flex: 1 }}><Text style={{ color: 'black', fontSize: 30 }} >Address</Text></View>
+                <View style={{ flex: 1 }}><Text style={{ color: 'black', fontSize: 30 }}>Delete</Text></View>
+                <View style={{ flex: 1 }}><Text style={{ color: 'black', fontSize: 30 }}>Update</Text></View>
 
 
 
@@ -49,8 +49,8 @@ const Thirdapi = () => {
                     data.map((item) =>
                         <View style={styles.dataWrappera}>
 
-                            <View style={{ flex: 1 }}><Text style={{ color: 'white', fontSize: 30 }}>{item.name}</Text></View>
-                            <View style={{ flex: 1 }}><Text style={{ color: 'white', fontSize: 30 }} >{item.address}</Text></View>
+                            <View style={{ flex: 1 }}><Text style={{ color: 'black', fontSize: 30 }}>{item.name}</Text></View>
+                            <View style={{ flex: 1 }}><Text style={{ color: 'black', fontSize: 30 }} >{item.address}</Text></View>
 
                             <View style={{ flex: 0.5 }}><Button title="Delete" onPress={() => Deleteapi(item.id)} /></View>
                             <View style={{ flex: 0.5 }}><Button title="update" onPress={() => Update(item)} /></View>
